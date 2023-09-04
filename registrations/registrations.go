@@ -32,4 +32,6 @@ type RecruitmentRegistration struct {
 	CollegeID   string         `gorm:"not null" json:"college_id"`
 	Email       string         `gorm:"unique;not null" json:"e_mail"`
 	Phone       string         `gorm:"unique;not null" json:"phone_number"`
+	Year        string         `json:"year"`
+	Branch      string         `json:"branch"`
 }
